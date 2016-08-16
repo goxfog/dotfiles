@@ -22,6 +22,7 @@ filetype plugin indent on	" required
 set background=dark
 colorscheme solarized
 """""""""""""""""""""""""""""""""""""""""""""
+
 set t_Co=256			" enable 256-color mode
 set number				" show line numbers
 set laststatus=2		" last window always has a statusline
@@ -44,3 +45,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 """"""""""
+" Display tabs and trailing spaces visually
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t\+\|\t\+\zs \+/

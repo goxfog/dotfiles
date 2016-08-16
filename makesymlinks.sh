@@ -7,7 +7,7 @@
 ################ Variables
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files="vimrc zshrc" 	#list of files/folders to symlink in homedir
+files="vimrc proxychains" 	#list of files/folders to symlink in homedir
 
 ################
 
@@ -18,7 +18,7 @@ echo "done"
 
 # change to the dotfiles directory
 echo -n "Changing to the $dir dirctory ..."
-cd $dir
+cd $di
 echo "done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, 
@@ -33,3 +33,4 @@ done
 
 # continue... 
 #install_zsh() 
+# install_
