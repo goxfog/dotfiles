@@ -7,7 +7,7 @@
 ################ Variables
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files="vimrc"	#list of files/folders to symlink in homedir
+files="vimrc "	#list of files/folders to symlink in homedir
 
 ################
 
@@ -31,6 +31,7 @@ for file in $files; do
 	ln -s $dir/$file ~/.$file
 done
 
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # continue...
 #install_zsh()
 # install_
